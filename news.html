@@ -1,0 +1,242 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+    <!-- import font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b663f686a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- import css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nextexh - News</title>
+  </head>
+  <body class="other-page">
+    <header>
+      <div class="nav-wrapper">
+        <nav>
+          <ul class="navigation">
+            <span class="toggleMenu"></span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)">Follow Us</a>
+              <div class="dropdown-content">
+                <a href="https://www.facebook.com"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.twitter.com"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="https://www.instagram.com"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="logo">
+      <img
+        src="https://media.discordapp.net/attachments/1083626681404760064/1135095837085679706/6710cfaf-07e6-48b2-8037-818c5a6ef78e-removebg-preview.png"
+        alt="Nextexh - News Logo"
+      />
+    </div>
+    <div class="cart-symbol"><i class="fa-solid fa-cart-shopping"></i></div>
+    <div id="mouse" data-mouse-dot class="desktop"></div>
+    <div id="mouse-follow" data-mouse-follow class="desktop"></div>
+
+    <main id="news-page">
+      <section class="news-section">
+        <article class="news-article">
+          <h2 class="news-title">
+            Nextexh - News Unveils Revolutionary AI Chip, This Changes Everything.
+          </h2>
+          <img
+            src="https://media.discordapp.net/attachments/1083626681404760064/1136576482974650378/8b3aa34e-b016-4496-acb8-4feb78a9afd9.jpg?width=600&height=600"
+            alt="AI Chip"
+            class="news-image"
+          />
+          <p class="news-date">July 15, 2029</p>
+          <p class="news-summary">
+            Nextexh - News has just announced the release of their latest product, a
+            revolutionary AI chip that promises to redefine the boundaries of
+            artificial intelligence. The chip, named 'Neura', is said to have
+            processing capabilities far beyond anything currently on the market.
+          </p>
+        </article>
+
+        <article class="news-article">
+          <h2 class="news-title">
+            Nextexh - News's Quantum Computer Breaks New Ground
+          </h2>
+          <img
+            src="https://media.discordapp.net/attachments/1083626681404760064/1136576483515695184/istockphoto-923335984-612x612_1.jpg"
+            alt="Quantum Computer"
+            class="news-image"
+          />
+          <p class="news-date">June 30, 2029</p>
+          <p class="news-summary">
+            Nextexh - News's quantum computing division has achieved a significant
+            milestone by successfully factoring the largest number to date using
+            a quantum computer. This breakthrough demonstrates the potential of
+            quantum computing and its ability to solve complex problems much
+            faster than traditional computers.
+          </p>
+        </article>
+
+        <article class="news-article">
+          <h2 class="news-title">
+            Nextexh - News's Autonomous Vehicle First To Pass 1 Million Miles
+          </h2>
+          <img
+            src="https://media.discordapp.net/attachments/1083626681404760064/1136576483230486680/f3e8a1e2-8daf-4fe5-bd0f-c82629756fd0.jpg?width=600&height=600"
+            alt="Autonomous Vehicle"
+            class="news-image"
+          />
+          <p class="news-date">June 15, 2029</p>
+          <p class="news-summary">
+            Nextexh - News's fleet of autonomous vehicles has collectively driven over
+            1 million miles without a single accident. This milestone is a
+            testament to Nextexh - News's advanced AI and machine learning algorithms,
+            which allow their vehicles to navigate complex traffic situations
+            with ease.
+          </p>
+        </article>
+      </section>
+      <section id="upcoming-events">
+        <form id="register-form">
+          <div class="form-wrapper">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="form-group">
+              <label for="time">Time:</label>
+              <input type="time" id="time" name="time" />
+            </div>
+            <input type="submit" id="submit-btn" value="Register" />
+          </div>
+        </form>
+        <div id="confirmation-modal" class="modal">
+          <div class="modal-content">
+            <p>Congrats on registering for the webinar, see you there!</p>
+            <span class="close">&times;</span>
+          </div>
+        </div>
+
+        <div id="laptop-img" class="desktop">
+          <img
+            src="https://media.discordapp.net/attachments/1083626681404760064/1136737363431784600/c4bf2b30-073c-4b60-872e-ff4041bcf8f7-removebg-preview.png"
+            alt="Laptop"
+          />
+        </div>
+        <h2>Upcoming Events</h2>
+        <div class="event-wrapper">
+          <div class="event event1">
+            <h3>AI Tech Conference 2029</h3>
+            <p class="event-date">-September 15, 2029</p>
+            <p>
+              Join us at the annual AI Tech Conference where we will be
+              unveiling our latest AI innovations. Stay tuned for more details!
+            </p>
+          </div>
+          <div class="event event2">
+            <h3>Nextexh - News Webinar: The Future of AI</h3>
+            <p class="event-date">-October 20, 2029</p>
+            <p>
+              Don't miss our upcoming webinar where our experts will discuss the
+              future of AI and our role in shaping it. Register now to secure
+              your spot!
+            </p>
+            <!-- link to register now page -->
+            <a href="register.html" id="register-btn">Register Now</a>
+          </div>
+          <div class="event event3">
+            <h3>Product Launch: Nextexh - News Quantum PC</h3>
+            <p class="event-date">-November 30, 2029</p>
+            <p>
+              We're excited to announce the launch of our Quantum Computer. Join
+              us for the live event and be the first to witness the future of
+              computing!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2029 Nextexh - News Innovations. All rights reserved.</p>
+      <p>Designed By <a href="#">Lewybagz</a></p>
+    </footer>
+    <style></style>
+    <!-- link js -->
+    <script src="main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Toggle form and image visibility when register button is clicked
+        document
+          .getElementById("register-btn")
+          .addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default action (navigating to register.html)
+            var form = document.getElementById("register-form");
+            var img = document.getElementById("laptop-img");
+
+            if (form.style.display === "none" || form.style.display === "") {
+              form.style.display = "block";
+              // Check if the screen width is 768px or less
+              if (window.matchMedia("(max-width: 768px)").matches) {
+                img.style.display = "none"; // Hide the image on small screens
+              } else {
+                img.style.display = "none"; // Hide the image on larger screens
+              }
+            } else {
+              form.style.display = "none";
+              // Check if the screen width is 768px or less
+              if (window.matchMedia("(max-width: 768px)").matches) {
+                img.style.display = "none"; // Hide the image on small screens
+              } else {
+                img.style.display = "block"; // Show the image on larger screens
+              }
+            }
+          });
+        // Show the confirmation modal when the form is submitted
+        document
+          .getElementById("register-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Show the confirmation modal
+            document.getElementById("confirmation-modal").style.display =
+              "block";
+
+            // Clear the form
+            event.target.reset();
+          });
+
+        // When the user clicks on <span> (x), close the modal and the form
+        document.getElementsByClassName("close")[0].onclick = function () {
+          if (window.matchMedia("(max-width: 768px)").matches) {
+            document.getElementById("confirmation-modal").style.display =
+              "none";
+            document.getElementById("register-form").style.display = "none";
+          }
+        };
+      });
+    </script>
+  </body>
+</html>
