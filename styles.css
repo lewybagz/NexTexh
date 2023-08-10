@@ -1,4 +1,7 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 
 html {
   scroll-behavior: smooth;
@@ -62,6 +65,7 @@ a {
   right: -400px; /* half of width to move it off screen to the right */
   /* top: 50%; */
 
+
   z-index: 1;
 }
 .home-img1 {
@@ -74,6 +78,7 @@ a {
   perspective: 500px;
   transform: rotateX(0deg) rotateY(10deg) translate(30%, -10%);
 }
+
 
 .nav-wrapper {
   width: 100%;
@@ -212,28 +217,20 @@ a {
   color: #fff;
 }
 
+
 .logo {
   max-width: fit-content;
   height: fit-content;
   position: fixed;
   top: 0;
-  left: 275px;
+  left: 10px;
+  top: 5px;
   z-index: 99;
   transition: all 0.6s ease-in-out;
 }
-
 .logo img {
-  width: 100%;
-  height: auto;
-}
-
-.logo.small {
-  left: 10px;
-  top: 5px;
-}
-
-.logo.small img {
   width: 30%;
+  height: auto;
 }
 .other-page .logo {
   top: 5px;
@@ -273,10 +270,12 @@ a {
   padding-top: 0;
 }
 
+
 .bottom-animation img {
   width: 100%; /* increase size */
   transform: translateX(0); /* reset the transform */
 }
+
 
 .hero {
   width: 50%;
@@ -288,8 +287,7 @@ a {
   text-align: center;
   padding: 0 1em;
   position: relative;
-  top: 800px;
-  left: 50px;
+  left: 75px;
   transition: all 0.8s ease-in-out;
 }
 .hero.small {
@@ -322,8 +320,7 @@ a {
 }
 .sub-hero {
   width: 100%;
-  min-height: 100vh;
-  max-height: 130vh;
+  max-height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -399,25 +396,13 @@ a {
 .sub-hero .home-img2 {
   position: relative;
   top: 300px;
-  left: -65%;
+  left: -30%;
   z-index: 5;
 }
 .sub-hero .home-img2 img {
   width: 100%; /* or any other size */
-  height: auto; /* maintain aspect ratio */
+  height: auto;
 }
-.animate-img {
-  animation: slide-in 1s ease-in-out forwards;
-}
-@keyframes slide-in {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(90%);
-  }
-}
-
 .journey {
   width: 100%;
   max-height: 95vh;
@@ -468,7 +453,7 @@ a {
 .journey .jrny-img {
   max-width: fit-content;
   position: relative;
-  top: 700px;
+  top: -350px;
   right: -500px;
   z-index: 5;
   pointer-events: none;
@@ -482,6 +467,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+
 @keyframes up {
   0% {
     transform: translateY(0);
@@ -490,6 +476,7 @@ a {
     transform: translateY(-1150px);
   }
 }
+
 
 .journey .content .journey-btn {
   display: flex;
@@ -509,6 +496,7 @@ a {
   color: #4a4af8;
   border-color: #4a4af8;
 }
+
 
 /* start product page */
 .featured {
@@ -744,6 +732,7 @@ a {
   background: #4a4af8;
 }
 
+
 #product-nav li {
   display: flex;
   justify-content: center;
@@ -754,6 +743,7 @@ a {
   font-size: 1.25em;
 }
 
+
 #product-container {
   display: flex;
   max-width: fit-content;
@@ -763,9 +753,11 @@ a {
   align-items: center;
 }
 
+
 .product-section {
   display: none;
 }
+
 
 .product-section.active {
   display: flex;
@@ -786,9 +778,11 @@ a {
   height: auto;
 }
 
+
 #product-nav li.active {
   color: whitesmoke;
 }
+
 
 /* start news page */
 #news-page {
@@ -941,15 +935,18 @@ a {
   gap: 2em;
 }
 
+
 #register-form .form-group {
   margin-bottom: 10px;
 }
+
 
 #register-form label {
   display: block;
   margin-bottom: 5px;
   color: white;
 }
+
 
 #register-form input[type="text"],
 #register-form input[type="email"],
@@ -965,6 +962,7 @@ a {
   color: black;
   background-color: white;
 }
+
 
 #register-form input[type="submit"] {
   background-color: #4a4af8;
@@ -998,6 +996,7 @@ a {
   backdrop-filter: blur(20px);
 }
 
+
 /* Modal Content/Box */
 .modal-content {
   margin: 14% auto;
@@ -1009,6 +1008,7 @@ a {
   top: 20%;
 }
 
+
 /* The Close Button */
 .close {
   color: #4a4af8;
@@ -1018,12 +1018,14 @@ a {
   font-weight: 700;
 }
 
+
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
+
 
 #upcoming-events h2 {
   text-align: center;
@@ -1078,6 +1080,7 @@ a {
   padding-bottom: 1em;
 }
 
+
 /* start about page */
 nav span {
   color: black;
@@ -1121,6 +1124,7 @@ nav span {
 #company-history .black {
   color: black;
 }
+
 
 #company-history .white {
   color: white;
@@ -1212,6 +1216,7 @@ nav span {
   z-index: 1;
 }
 
+
 .team-wrapper::after {
   content: "";
   position: absolute;
@@ -1225,6 +1230,7 @@ nav span {
   transform-origin: top left;
   z-index: -1;
 }
+
 
 .team-wrapper h2 {
   font-size: 3.5em;
@@ -1300,6 +1306,7 @@ nav span {
   font-weight: 600;
 }
 
+
 #values {
   position: relative; /* Add this to contain the pseudo-element */
   display: flex;
@@ -1350,6 +1357,7 @@ nav span {
   z-index: 2;
 }
 
+
 .card h3 {
   position: absolute;
   z-index: 2; /* Ensures that h3 is on top */
@@ -1379,6 +1387,7 @@ nav span {
 .card:hover p {
   opacity: 1;
 }
+
 
 /* start contact page */
 .contact {
@@ -1558,7 +1567,7 @@ nav span {
   border-radius: 50%;
   background-color: #4a4af8;
   position: absolute;
-  right: 400px;
+  right: 450px;
   top: 70%;
   z-index: 1;
 }
@@ -1568,10 +1577,11 @@ nav span {
   border-radius: 50%;
   background-color: #4a4af8;
   position: absolute;
-  left: 540px;
-  top: 10%;
+  left: 650px;
+  top: 13%;
   z-index: 1;
 }
+
 
 footer {
   width: 100%;
@@ -1621,6 +1631,7 @@ footer {
     align-items: flex-start;
     left: 0;
   }
+
 
   .navigation .toggleMenu {
     top: -5px; /* Align with the top of the navigation */
@@ -1833,6 +1844,7 @@ footer {
     padding: 1em;
     gap: 0;
 
+
     -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
     scrollbar-width: none;
   }
@@ -1854,9 +1866,11 @@ footer {
     height: 3px; /* Width of the scrollbar */
   }
 
+
   #product-nav::-webkit-scrollbar-thumb {
     background: #4a4af8; /* Color of the scroll thumb */
   }
+
 
   #product-nav::-webkit-scrollbar-track {
     background: #f1f1f1; /* Color of the track */
@@ -1871,6 +1885,7 @@ footer {
   .product-section .product #product-name {
     margin-bottom: 0.5em;
   }
+
 
   /* start news page */
   .news-section {
@@ -1922,6 +1937,7 @@ footer {
   .close {
     font-size: 2.5em;
   }
+
 
   /* start about page */
   #company-history {
@@ -1977,6 +1993,7 @@ footer {
     opacity: 1;
     z-index: 1;
   }
+
 
   /* start contact page */
   .contact {

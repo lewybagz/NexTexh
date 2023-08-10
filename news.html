@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,6 +52,7 @@
     <div id="mouse" data-mouse-dot class="desktop"></div>
     <div id="mouse-follow" data-mouse-follow class="desktop"></div>
 
+
     <main id="news-page">
       <section class="news-section">
         <article class="news-article">
@@ -73,6 +73,7 @@
           </p>
         </article>
 
+
         <article class="news-article">
           <h2 class="news-title">
             Nextexh - News's Quantum Computer Breaks New Ground
@@ -91,6 +92,7 @@
             faster than traditional computers.
           </p>
         </article>
+
 
         <article class="news-article">
           <h2 class="news-title">
@@ -139,6 +141,7 @@
             <span class="close">&times;</span>
           </div>
         </div>
+
 
         <div id="laptop-img" class="desktop">
           <img
@@ -196,6 +199,7 @@
             var form = document.getElementById("register-form");
             var img = document.getElementById("laptop-img");
 
+
             if (form.style.display === "none" || form.style.display === "") {
               form.style.display = "block";
               // Check if the screen width is 768px or less
@@ -220,13 +224,16 @@
           .addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent the default form submission behavior
 
+
             // Show the confirmation modal
             document.getElementById("confirmation-modal").style.display =
               "block";
 
+
             // Clear the form
             event.target.reset();
           });
+
 
         // When the user clicks on <span> (x), close the modal and the form
         document.getElementsByClassName("close")[0].onclick = function () {
