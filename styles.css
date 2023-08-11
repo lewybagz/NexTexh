@@ -1,7 +1,4 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 
 html {
   scroll-behavior: smooth;
@@ -65,7 +62,6 @@ a {
   right: -400px; /* half of width to move it off screen to the right */
   /* top: 50%; */
 
-
   z-index: 1;
 }
 .home-img1 {
@@ -78,7 +74,6 @@ a {
   perspective: 500px;
   transform: rotateX(0deg) rotateY(10deg) translate(30%, -10%);
 }
-
 
 .nav-wrapper {
   width: 100%;
@@ -103,8 +98,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px) saturate(100%) contrast(60%)
+    brightness(130%);
+  backdrop-filter: blur(10px) saturate(100%) contrast(60%) brightness(130%);
   overflow: visible;
 }
 .navigation.active {
@@ -217,7 +213,6 @@ a {
   color: #fff;
 }
 
-
 .logo {
   max-width: fit-content;
   height: fit-content;
@@ -270,12 +265,10 @@ a {
   padding-top: 0;
 }
 
-
 .bottom-animation img {
   width: 100%; /* increase size */
   transform: translateX(0); /* reset the transform */
 }
-
 
 .hero {
   width: 50%;
@@ -320,7 +313,7 @@ a {
 }
 .sub-hero {
   width: 100%;
-  max-height: 120vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -467,7 +460,6 @@ a {
   animation-fill-mode: forwards;
 }
 
-
 @keyframes up {
   0% {
     transform: translateY(0);
@@ -476,7 +468,6 @@ a {
     transform: translateY(-1150px);
   }
 }
-
 
 .journey .content .journey-btn {
   display: flex;
@@ -496,7 +487,6 @@ a {
   color: #4a4af8;
   border-color: #4a4af8;
 }
-
 
 /* start product page */
 .featured {
@@ -732,7 +722,6 @@ a {
   background: #4a4af8;
 }
 
-
 #product-nav li {
   display: flex;
   justify-content: center;
@@ -743,7 +732,6 @@ a {
   font-size: 1.25em;
 }
 
-
 #product-container {
   display: flex;
   max-width: fit-content;
@@ -753,11 +741,9 @@ a {
   align-items: center;
 }
 
-
 .product-section {
   display: none;
 }
-
 
 .product-section.active {
   display: flex;
@@ -778,11 +764,9 @@ a {
   height: auto;
 }
 
-
 #product-nav li.active {
   color: whitesmoke;
 }
-
 
 /* start news page */
 #news-page {
@@ -935,18 +919,15 @@ a {
   gap: 2em;
 }
 
-
 #register-form .form-group {
   margin-bottom: 10px;
 }
-
 
 #register-form label {
   display: block;
   margin-bottom: 5px;
   color: white;
 }
-
 
 #register-form input[type="text"],
 #register-form input[type="email"],
@@ -962,7 +943,6 @@ a {
   color: black;
   background-color: white;
 }
-
 
 #register-form input[type="submit"] {
   background-color: #4a4af8;
@@ -996,7 +976,6 @@ a {
   backdrop-filter: blur(20px);
 }
 
-
 /* Modal Content/Box */
 .modal-content {
   margin: 14% auto;
@@ -1008,7 +987,6 @@ a {
   top: 20%;
 }
 
-
 /* The Close Button */
 .close {
   color: #4a4af8;
@@ -1018,14 +996,12 @@ a {
   font-weight: 700;
 }
 
-
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
 
 #upcoming-events h2 {
   text-align: center;
@@ -1080,7 +1056,6 @@ a {
   padding-bottom: 1em;
 }
 
-
 /* start about page */
 nav span {
   color: black;
@@ -1125,7 +1100,6 @@ nav span {
   color: black;
 }
 
-
 #company-history .white {
   color: white;
 }
@@ -1145,7 +1119,7 @@ nav span {
   left: 5%;
 }
 .right {
-  top: -30%;
+  top: -45%;
   left: 60%;
   color: white;
 }
@@ -1216,7 +1190,6 @@ nav span {
   z-index: 1;
 }
 
-
 .team-wrapper::after {
   content: "";
   position: absolute;
@@ -1230,7 +1203,6 @@ nav span {
   transform-origin: top left;
   z-index: -1;
 }
-
 
 .team-wrapper h2 {
   font-size: 3.5em;
@@ -1306,7 +1278,6 @@ nav span {
   font-weight: 600;
 }
 
-
 #values {
   position: relative; /* Add this to contain the pseudo-element */
   display: flex;
@@ -1357,7 +1328,6 @@ nav span {
   z-index: 2;
 }
 
-
 .card h3 {
   position: absolute;
   z-index: 2; /* Ensures that h3 is on top */
@@ -1387,7 +1357,6 @@ nav span {
 .card:hover p {
   opacity: 1;
 }
-
 
 /* start contact page */
 .contact {
@@ -1582,7 +1551,6 @@ nav span {
   z-index: 1;
 }
 
-
 footer {
   width: 100%;
   height: 100px;
@@ -1630,8 +1598,9 @@ footer {
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start;
     left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
   }
-
 
   .navigation .toggleMenu {
     top: -5px; /* Align with the top of the navigation */
@@ -1643,7 +1612,7 @@ footer {
   }
   .navigation .toggleMenu::before,
   .navigation .toggleMenu::after {
-    background-color: whitesmoke;
+    background-color: #4a4af8;
     height: 5px;
   }
   .navigation .toggleMenu::before {
@@ -1844,7 +1813,6 @@ footer {
     padding: 1em;
     gap: 0;
 
-
     -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
     scrollbar-width: none;
   }
@@ -1866,11 +1834,9 @@ footer {
     height: 3px; /* Width of the scrollbar */
   }
 
-
   #product-nav::-webkit-scrollbar-thumb {
     background: #4a4af8; /* Color of the scroll thumb */
   }
-
 
   #product-nav::-webkit-scrollbar-track {
     background: #f1f1f1; /* Color of the track */
@@ -1885,7 +1851,6 @@ footer {
   .product-section .product #product-name {
     margin-bottom: 0.5em;
   }
-
 
   /* start news page */
   .news-section {
@@ -1937,7 +1902,6 @@ footer {
   .close {
     font-size: 2.5em;
   }
-
 
   /* start about page */
   #company-history {
@@ -1993,7 +1957,6 @@ footer {
     opacity: 1;
     z-index: 1;
   }
-
 
   /* start contact page */
   .contact {

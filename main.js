@@ -11,14 +11,19 @@ var friction = 0.75; // You can adjust the friction to change the trailing effec
 document.addEventListener("DOMContentLoaded", function () {
   var toggleMenu = document.querySelector(".toggleMenu");
   var navigation = document.querySelector(".navigation");
+  var navLinks = document.querySelectorAll(".navigation li a");
+  var currentPage = window.location.href;
 
   toggleMenu.addEventListener("click", function () {
     navigation.classList.toggle("active");
   });
 
-  var navLinks = document.querySelectorAll(".navigation li a");
-
   navLinks.forEach(function (link) {
+    // If the link URL matches the current page URL, add the active class to the parent li
+    if (link.href === currentPage) {
+      link.parentElement.classList.add("active");
+    }
+
     link.addEventListener("click", function (event) {
       // Prevent the default behavior of the link
       event.preventDefault();
@@ -36,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
 
 document.addEventListener("mousemove", function (event) {
   // Update the position of the mouseDot element
@@ -78,47 +82,47 @@ function updateMouseFollow() {
 updateMouseFollow();
 
 document.addEventListener("DOMContentLoaded", function () {
-   var tabs = document.querySelectorAll("#product-nav li");
-   var productNav = document.querySelector("#product-nav");
-   var productSections = document.querySelectorAll(".product-section");
- 
-   // Function to update the underline position
-   function updateUnderline() {
-     var activeTab = document.querySelector("#product-nav li.active");
-     if (activeTab) {
-       var newLeft = activeTab.offsetLeft;
-       var newWidth = activeTab.offsetWidth / productNav.offsetWidth;
-       productNav.style.setProperty("--_left", newLeft + "px");
-       productNav.style.setProperty("--_width", newWidth);
-     }
-   }
- 
-   tabs.forEach(function (tab) {
-     tab.addEventListener("click", function () {
-       // Get the target section's ID from the data-target attribute
-       var target = tab.getAttribute("data-target");
- 
-       // Remove 'active' class from all sections
-       productSections.forEach(function (section) {
-         section.classList.remove("active");
-       });
- 
-       // Remove 'active' class from all tabs
-       tabs.forEach(function (otherTab) {
-         otherTab.classList.remove("active");
-       });
- 
-       // Add 'active' class to the target section
-       document.getElementById(target).classList.add("active");
- 
-       // Add 'active' class to the clicked tab
-       tab.classList.add("active");
- 
-       // Update the underline position
-       updateUnderline();
-     });
-   });
- 
-   // Update the underline position when the page loads
-   updateUnderline();
- }); 
+  var tabs = document.querySelectorAll("#product-nav li");
+  var productNav = document.querySelector("#product-nav");
+  var productSections = document.querySelectorAll(".product-section");
+
+  // Function to update the underline position
+  function updateUnderline() {
+    var activeTab = document.querySelector("#product-nav li.active");
+    if (activeTab) {
+      var newLeft = activeTab.offsetLeft;
+      var newWidth = activeTab.offsetWidth / productNav.offsetWidth;
+      productNav.style.setProperty("--_left", newLeft + "px");
+      productNav.style.setProperty("--_width", newWidth);
+    }
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      // Get the target section's ID from the data-target attribute
+      var target = tab.getAttribute("data-target");
+
+      // Remove 'active' class from all sections
+      productSections.forEach(function (section) {
+        section.classList.remove("active");
+      });
+
+      // Remove 'active' class from all tabs
+      tabs.forEach(function (otherTab) {
+        otherTab.classList.remove("active");
+      });
+
+      // Add 'active' class to the target section
+      document.getElementById(target).classList.add("active");
+
+      // Add 'active' class to the clicked tab
+      tab.classList.add("active");
+
+      // Update the underline position
+      updateUnderline();
+    });
+  });
+
+  // Update the underline position when the page loads
+  updateUnderline();
+});
