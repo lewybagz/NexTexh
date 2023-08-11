@@ -6,7 +6,11 @@ var currentX = 0;
 var currentY = 0;
 var velocityX = 0;
 var velocityY = 0;
-var friction = 0.75; // You can adjust the friction to change the trailing effect
+var friction = 0.75;
+var cartContent = document.querySelector(".cart-content");
+var cartSymbol = document.querySelector(".cart-symbol");
+var cartCount = 0;
+updateCartCountDisplay();
 
 document.addEventListener("DOMContentLoaded", function () {
   var toggleMenu = document.querySelector(".toggleMenu");
@@ -126,3 +130,113 @@ document.addEventListener("DOMContentLoaded", function () {
   // Update the underline position when the page loads
   updateUnderline();
 });
+
+document.querySelector(".cart-symbol").addEventListener("click", function () {
+  var cartOverlay = document.getElementById("cart-overlay");
+  var cartContent = cartOverlay.querySelector(".cart-content");
+  cartOverlay.style.display = "block";
+  cartContent.classList.add("open"); // Add the open class
+});
+
+document
+  .getElementById("close-cart-btn")
+  .addEventListener("click", function () {
+    var cartOverlay = document.getElementById("cart-overlay");
+    var cartContent = cartOverlay.querySelector(".cart-content");
+    cartContent.classList.remove("open"); // Remove the open class
+    cartOverlay.style.display = "none";
+  });
+
+document.querySelectorAll(".add-to-cart-btn").forEach(function (button) {
+  button.addEventListener("click", function () {
+    var productDiv = button.closest(".product, .feat-product"); // Match both regular and featured products
+    var name = productDiv.querySelector(".product-name").textContent;
+    var price = productDiv.querySelector(".product-price span").textContent;
+    var quantity = productDiv.querySelector(".quantity-selector").value;
+    var imageUrl = productDiv.querySelector(".img-box img").src;
+
+    addToCart(name, price, quantity, imageUrl);
+  });
+});
+
+function addToCart(name, price, quantity, imageUrl) {
+  var cartItems = document.getElementById("cart-items");
+  var cartTotal = document.getElementById("cart-total");
+  var total = parseFloat(cartTotal.textContent.replace("$", ""));
+
+  var itemPrice = parseFloat(price.replace("$", "")) * quantity;
+  itemPrice = itemPrice.toFixed(2); // Round the individual item's total price
+
+  var item = document.createElement("div");
+  item.innerHTML = `
+  <div class="cart-item">
+  <div class="cart-item-container">
+    <img src="${imageUrl}" alt="${name}" class="cart-item-img" />
+    <div class="cart-item-details">
+      <h4>${name}</h4>
+      <span>${price} ( ${quantity} ) = $${itemPrice}</span>
+    </div>
+  </div>
+    <button class="remove-item-btn">Remove</button> <!-- Add the "Remove" button here -->
+  </div>
+`;
+
+  // Add the shake class to the cart symbol
+  var cartSymbol = document.querySelector(".cart-symbol");
+  cartSymbol.classList.add("shake");
+
+  // Remove the shake class after the animation duration (0.5s in this example)
+  setTimeout(function () {
+    cartSymbol.classList.remove("shake");
+  }, 500);
+  
+  cartCount += parseInt(quantity); // Increment the cart count by the quantity added
+  updateCartCountDisplay();
+
+  cartItems.appendChild(item);
+  total += parseFloat(itemPrice);
+  cartTotal.textContent = "$" + total.toFixed(2); // Round the total cart price
+  showNotification("cart-notification");
+}
+
+document.getElementById("cart-items").addEventListener("click", function (e) {
+  if (e.target.classList.contains("remove-item-btn")) {
+    var itemContainer = e.target.closest(".cart-item");
+    var priceSpan = itemContainer.querySelector(".cart-item-details span");
+    var itemPrice = parseFloat(priceSpan.textContent.split(" = $")[1]);
+    var cartTotal = document.getElementById("cart-total");
+    var total = parseFloat(cartTotal.textContent.replace("$", "")) - itemPrice;
+    cartTotal.textContent = "$" + total.toFixed(2);
+
+    // Add the slide-out-right class to start the animation
+    itemContainer.classList.add("slide-out-right");
+
+    var quantitySpan = itemContainer.querySelector(".cart-item-details span");
+    var itemQuantity = parseInt(
+      quantitySpan.textContent.split(" ( ")[1].split(" )")[0]
+    );
+    cartCount -= itemQuantity; // Decrement the cart count by the quantity removed
+    updateCartCountDisplay(); // Update the cart count display
+
+    // Remove the item from the DOM after the animation is complete (0.5s)
+    setTimeout(function () {
+      itemContainer.remove();
+    }, 500);
+  }
+});
+
+function showNotification(id) {
+  var notification = document.getElementById(id);
+  notification.style.display = "block";
+
+  // Hide the notification after 3 seconds
+  setTimeout(function () {
+    notification.style.display = "none";
+  }, 3000);
+}
+
+// Function to update the cart count display
+function updateCartCountDisplay() {
+  var cartCountDiv = document.querySelector(".cart-count");
+  cartCountDiv.textContent = cartCount; // Set the text content to the current cart count
+}

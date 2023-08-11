@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+    <meta http-equiv="“X-UA-Compatible”" content="“ie" ="edge”" />
     <!-- import font awesome -->
     <script
       src="https://kit.fontawesome.com/b663f686a8.js"
@@ -49,15 +49,39 @@
       />
     </div>
     <div class="cart-symbol"><i class="fa-solid fa-cart-shopping"></i></div>
+    <div class="cart-count"></div>
+    <div class="cart-overlay" id="cart-overlay">
+      <div class="cart-content">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="close-cart-btn" id="close-cart-btn">x</button>
+      </div>
+    </div>
+    <div class="cart-notification" id="cart-notification">
+      <p>Item added to cart!</p>
+    </div>
+    <div class="cart-notification" id="cart-notification-removed">
+      <p>Item removed from cart!</p>
+    </div>
+    <div class="cart-notification" id="cart-notification-empty">
+      <p>Your cart is empty!</p>
+    </div>
+    <div class="cart-notification" id="cart-notification-error">
+      <p>There was an error!</p>
+    </div>
     <div id="mouse" data-mouse-dot class="desktop"></div>
     <div id="mouse-follow" data-mouse-follow class="desktop"></div>
-
 
     <main id="news-page">
       <section class="news-section">
         <article class="news-article">
           <h2 class="news-title">
-            Nextexh - News Unveils Revolutionary AI Chip, This Changes Everything.
+            Nextexh - News Unveils Revolutionary AI Chip, This Changes
+            Everything.
           </h2>
           <img
             src="https://media.discordapp.net/attachments/1083626681404760064/1136576482974650378/8b3aa34e-b016-4496-acb8-4feb78a9afd9.jpg?width=600&height=600"
@@ -66,13 +90,13 @@
           />
           <p class="news-date">July 15, 2029</p>
           <p class="news-summary">
-            Nextexh - News has just announced the release of their latest product, a
-            revolutionary AI chip that promises to redefine the boundaries of
-            artificial intelligence. The chip, named 'Neura', is said to have
-            processing capabilities far beyond anything currently on the market.
+            Nextexh - News has just announced the release of their latest
+            product, a revolutionary AI chip that promises to redefine the
+            boundaries of artificial intelligence. The chip, named 'Neura', is
+            said to have processing capabilities far beyond anything currently
+            on the market.
           </p>
         </article>
-
 
         <article class="news-article">
           <h2 class="news-title">
@@ -85,14 +109,13 @@
           />
           <p class="news-date">June 30, 2029</p>
           <p class="news-summary">
-            Nextexh - News's quantum computing division has achieved a significant
-            milestone by successfully factoring the largest number to date using
-            a quantum computer. This breakthrough demonstrates the potential of
-            quantum computing and its ability to solve complex problems much
-            faster than traditional computers.
+            Nextexh - News's quantum computing division has achieved a
+            significant milestone by successfully factoring the largest number
+            to date using a quantum computer. This breakthrough demonstrates the
+            potential of quantum computing and its ability to solve complex
+            problems much faster than traditional computers.
           </p>
         </article>
-
 
         <article class="news-article">
           <h2 class="news-title">
@@ -105,11 +128,11 @@
           />
           <p class="news-date">June 15, 2029</p>
           <p class="news-summary">
-            Nextexh - News's fleet of autonomous vehicles has collectively driven over
-            1 million miles without a single accident. This milestone is a
-            testament to Nextexh - News's advanced AI and machine learning algorithms,
-            which allow their vehicles to navigate complex traffic situations
-            with ease.
+            Nextexh - News's fleet of autonomous vehicles has collectively
+            driven over 1 million miles without a single accident. This
+            milestone is a testament to Nextexh - News's advanced AI and machine
+            learning algorithms, which allow their vehicles to navigate complex
+            traffic situations with ease.
           </p>
         </article>
       </section>
@@ -141,7 +164,6 @@
             <span class="close">&times;</span>
           </div>
         </div>
-
 
         <div id="laptop-img" class="desktop">
           <img
@@ -199,7 +221,6 @@
             var form = document.getElementById("register-form");
             var img = document.getElementById("laptop-img");
 
-
             if (form.style.display === "none" || form.style.display === "") {
               form.style.display = "block";
               // Check if the screen width is 768px or less
@@ -224,16 +245,13 @@
           .addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent the default form submission behavior
 
-
             // Show the confirmation modal
             document.getElementById("confirmation-modal").style.display =
               "block";
 
-
             // Clear the form
             event.target.reset();
           });
-
 
         // When the user clicks on <span> (x), close the modal and the form
         document.getElementsByClassName("close")[0].onclick = function () {
