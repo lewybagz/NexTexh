@@ -73,17 +73,18 @@ a {
 }
 
 .nav-wrapper {
-  width: 100%;
+  width: fit-content;
   max-height: fit-content;
   position: fixed;
-  top: 20px;
-  left: 0;
+  top: 20px; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset by half of the element's width and height */
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 1em; */
 }
+
 .navigation {
   position: relative;
   width: 60px;
@@ -813,7 +814,7 @@ a {
   content: "";
   position: absolute;
   top: 0;
-  left: 2px;
+  left: 1px;
   width: 20px;
   height: 20px;
   background: #4a4af8;
@@ -881,6 +882,7 @@ a {
   transition: all 0.5s ease;
   color: #4a4af8;
   font-weight: 700;
+  cursor: none;
 }
 #product-nav {
   display: flex;
