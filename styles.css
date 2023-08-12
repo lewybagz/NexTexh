@@ -1782,8 +1782,9 @@ footer {
   }
   .nav-wrapper {
     justify-content: flex-start;
-    left: 5%;
     transition: all 0.5s ease-in-out;
+    left: 5%;
+    transform: translateX(0);
   }
   .navigation.active .nav-wrapper {
     left: 5%;
@@ -1802,7 +1803,6 @@ footer {
     margin: 0 auto;
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start;
-    left: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
   }
