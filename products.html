@@ -1,9 +1,10 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="“X-UA-Compatible”" content="“ie" ="edge”" />
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
     <!-- import font awesome -->
     <script
       src="https://kit.fontawesome.com/b663f686a8.js"
@@ -49,30 +50,6 @@
       />
     </div>
     <div class="cart-symbol"><i class="fa-solid fa-cart-shopping"></i></div>
-    <div class="cart-count"></div>
-    <div class="cart-overlay" id="cart-overlay">
-      <div class="cart-content">
-        <h2>Your Cart</h2>
-        <div class="cart-items" id="cart-items"></div>
-        <div class="cart-total">
-          <span>Total:</span>
-          <span id="cart-total">$0.00</span>
-        </div>
-        <button class="close-cart-btn" id="close-cart-btn">x</button>
-      </div>
-    </div>
-    <div class="cart-notification" id="cart-notification">
-      <p>Item added to cart!</p>
-    </div>
-    <div class="cart-notification" id="cart-notification-removed">
-      <p>Item removed from cart!</p>
-    </div>
-    <div class="cart-notification" id="cart-notification-empty">
-      <p>Your cart is empty!</p>
-    </div>  
-    <div class="cart-notification" id="cart-notification-error">
-      <p>There was an error!</p>
-    </div>
     <div id="mouse" data-mouse-dot class="desktop"></div>
     <div id="mouse-follow" data-mouse-follow class="desktop"></div>
 
@@ -80,7 +57,7 @@
       <h2>Featured Products</h2>
       <div class="featured-product-cont">
         <div class="feat-product">
-          <h3 class="product-name">Nextexh AI Personal Assistant</h3>
+          <h3 id="product-name">Nextexh AI Personal Assistant</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551897033293865/ai-1.jpg?width=593&height=593"
@@ -91,13 +68,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A smart device that uses advanced AI to learn from your habits and
             preferences, making your life easier and more efficient.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -107,7 +84,7 @@
           </div>
         </div>
         <div class="feat-product">
-          <h3 class="product-name">Nextexh VR Gaming System</h3>
+          <h3 id="product-name">Nextexh VR Gaming System</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551897863766036/vr-1.jpg?width=593&height=593"
@@ -118,12 +95,12 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A VR gaming system that provides an immersive gaming experience.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -133,7 +110,7 @@
           </div>
         </div>
         <div class="feat-product product3">
-          <h3 class="product-name">Nextexh Quantum PC</h3>
+          <h3 id="product-name">Nextexh Quantum PC</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552011273556019/quantum-1.jpg?width=593&height=593"
@@ -144,13 +121,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             The world's first quantum PC, capable of performing complex
             calculations at unprecedented speeds.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -179,7 +156,7 @@
     <div id="product-container">
       <section id="product-section-1" class="product-section active">
         <div class="product">
-          <h3 class="product-name">Nextexh AI Personal Assistant</h3>
+          <h3 id="product-name">Nextexh AI Personal Assistant</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551897033293865/ai-1.jpg?width=593&height=593"
@@ -190,13 +167,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A smart device that uses advanced AI to learn from your habits and
             preferences, making your life easier and more efficient.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -206,7 +183,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh AI Home Security</h3>
+          <h3 id="product-name">Nextexh AI Home Security</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551897276559422/ai-2.jpg?width=593&height=593"
@@ -217,13 +194,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A home security system that uses AI to recognize faces and detect
             unusual activity.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -233,7 +210,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh AI Health Monitor</h3>
+          <h3 id="product-name">Nextexh AI Health Monitor</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551899373707274/ai-3.jpg?width=593&height=593"
@@ -244,13 +221,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A wearable device that uses AI to monitor your health and alert you
             to potential issues.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -260,7 +237,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh AI Tutor</h3>
+          <h3 id="product-name">Nextexh AI Tutor</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551896718712964/ai-4.jpg?width=593&height=593"
@@ -271,13 +248,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             An AI-powered tutoring system that adapts to your learning style and
             helps you master new subjects.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -287,7 +264,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh AI Chef</h3>
+          <h3 id="product-name">Nextexh AI Chef</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551897549185185/ai-5.jpg?width=593&height=593"
@@ -298,13 +275,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             An AI-powered cooking assistant that can suggest recipes based on
             what's in your fridge and your dietary preferences.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -316,7 +293,7 @@
       </section>
       <section id="product-section-2" class="product-section">
         <div class="product">
-          <h3 class="product-name">Nextexh VR Gaming System</h3>
+          <h3 id="product-name">Nextexh VR Gaming System</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551897863766036/vr-1.jpg?width=593&height=593"
@@ -327,12 +304,12 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A VR gaming system that provides an immersive gaming experience.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -342,7 +319,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh VR Home Theater</h3>
+          <h3 id="product-name">Nextexh VR Home Theater</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551898102837351/vr-2.jpg?width=593&height=593"
@@ -353,13 +330,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A VR system that lets you enjoy movies and TV shows as if you're in
             a cinema.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -369,7 +346,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh VR Travel Experience</h3>
+          <h3 id="product-name">Nextexh VR Travel Experience</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551898404823080/vr-3.jpg?width=593&height=593"
@@ -380,13 +357,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A VR system that lets you explore different parts of the world
             without leaving your home.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -396,7 +373,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh VR Fitness Trainer</h3>
+          <h3 id="product-name">Nextexh VR Fitness Trainer</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551898803290143/vr-4.jpg?width=593&height=593"
@@ -407,13 +384,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
-            A VR system that class="product-content" provides a fun and engaging
+          <p id="product-content">
+            A VR system that id="product-content" provides a fun and engaging
             way to stay fit.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -423,7 +400,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh VR Education System</h3>
+          <h3 id="product-name">Nextexh VR Education System</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138551899088498799/vr-5.jpg?width=593&height=593"
@@ -434,13 +411,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A VR system that provides immersive and interactive learning
             experiences.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -452,7 +429,7 @@
       </section>
       <section id="product-section-3" class="product-section">
         <div class="product">
-          <h3 class="product-name">Nextexh Quantum PC</h3>
+          <h3 id="product-name">Nextexh Quantum PC</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552011273556019/quantum-1.jpg?width=593&height=593"
@@ -463,13 +440,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             The world's first quantum PC, capable of performing complex
             calculations at unprecedented speeds.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -479,7 +456,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh Quantum Encryptor</h3>
+          <h3 id="product-name">Nextexh Quantum Encryptor</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552011575533719/quantum-2.jpg?width=593&height=593"
@@ -490,13 +467,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A quantum encryption system that provides unbreakable security for
             your data.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -506,7 +483,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh Quantum Router</h3>
+          <h3 id="product-name">Nextexh Quantum Router</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552011894313031/quantum-3.jpg?width=593&height=593"
@@ -517,13 +494,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A router that uses quantum technology to provide ultra-fast and
             secure internet connections.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -533,7 +510,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh Weather Predictor</h3>
+          <h3 id="product-name">Nextexh Weather Predictor</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552012250816623/quantum-4.jpg?width=593&height=593"
@@ -544,13 +521,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A device that uses quantum computing to predict weather patterns
             with unparalleled accuracy.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -560,7 +537,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh Quantum AI Assistant</h3>
+          <h3 id="product-name">Nextexh Quantum AI Assistant</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552012657655898/quantum-5.jpg?width=593&height=593"
@@ -571,13 +548,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             An AI assistant powered by quantum computing, capable of learning
             and adapting at an incredible pace.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -590,7 +567,7 @@
 
       <section id="product-section-4" class="product-section">
         <div class="product">
-          <h3 class="product-name">Nextexh IoT Smart Home System</h3>
+          <h3 id="product-name">Nextexh IoT Smart Home System</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552009914589314/iot-1.jpg?width=593&height=593"
@@ -601,13 +578,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A system of connected devices that automate and streamline tasks in
             your home.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -617,7 +594,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh IoT Energy Monitor</h3>
+          <h3 id="product-name">Nextexh IoT Energy Monitor</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552010195599450/iot-2.jpg?width=593&height=593"
@@ -628,13 +605,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A device that monitors your home's energy usage and helps you save
             on your energy bills.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -644,7 +621,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh IoT Pet Care System</h3>
+          <h3 id="product-name">Nextexh IoT Pet Care System</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552010451472586/iot-3.jpg?width=593&height=593"
@@ -655,13 +632,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             An autonomous devices that helps you take care of your pets, even
             when you're not home.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -671,7 +648,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh IoT Garden System</h3>
+          <h3 id="product-name">Nextexh IoT Garden System</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552010740867184/iot-4.jpg?width=593&height=593"
@@ -682,13 +659,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A system of connected devices that help you monitor and take care of
             your garden.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -698,7 +675,7 @@
           </div>
         </div>
         <div class="product">
-          <h3 class="product-name">Nextexh IoT Health System</h3>
+          <h3 id="product-name">Nextexh IoT Health System</h3>
           <div class="img-box">
             <img
               src="https://media.discordapp.net/attachments/1083626681404760064/1138552011013488640/iot-5.jpg?width=593&height=593"
@@ -709,13 +686,13 @@
           <div class="product-price">
             <span>$99.99</span>
           </div>
-          <p class="product-content">
+          <p id="product-content">
             A system of connected devices that monitor your health and provide
             real-time feedback.
           </p>
           <div class="add-to-cart">
             <label for="quantity" class="quantity-label">Quantity:</label>
-            <select name="quantity" class="quantity-selector">
+            <select id="quantity" name="quantity" class="quantity-selector">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
