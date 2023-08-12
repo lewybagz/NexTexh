@@ -76,9 +76,9 @@ a {
   width: fit-content;
   max-height: fit-content;
   position: fixed;
-  top: 20px; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Offset by half of the element's width and height */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -1802,7 +1802,7 @@ footer {
     margin: 0 auto;
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start;
-    left: 0;
+    left: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
   }
