@@ -22,7 +22,7 @@ body {
   font-family: "poppins", sans-serif;
   color: white;
   overflow-x: hidden;
-  cursor: none;
+  /* cursor: none; */
 }
 a {
   text-decoration: none;
@@ -196,6 +196,9 @@ a {
   align-items: center;
   padding: 0.5em;
 }
+.navigation li .dropdown-content a.fb-mobile {
+  display: none;
+}
 .navigation li .dropdown-content a i {
   color: black; /* You can change this color to match your theme */
   font-size: 25px; /* Adjusts the size of the icon */
@@ -350,6 +353,21 @@ a {
   border-radius: 20px;
   color: whitesmoke;
 }
+.cart-scrollable {
+  max-height: 70vh; 
+  overflow-y: auto;
+  scrollbar-width: 3px;
+}
+.cart-scrollable::-webkit-scrollbar {
+  width: 3px;
+}
+.cart-scrollable::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.cart-scrollable::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+}
+
 .cart-content h2 {
   max-width: fit-content;
   text-align: center;
@@ -380,6 +398,8 @@ a {
   align-items: center;
   justify-content: space-between;
   padding-block: 1em;
+  padding-inline: 0.5em;
+  margin-right: 1em;
   border-bottom: 2px solid #ccc;
 }
 .cart-item-img {
@@ -404,7 +424,18 @@ a {
 }
 .cart-total {
   padding-block: 1em;
-  /* color: red; */
+}
+/* first span tag in .cart-total */
+.cart-total span:first-child {
+  font-size: 1.25em;
+  font-weight: 700;
+  /* letter-spacing: 1px; */
+}
+/* second span tag in .cart-total */
+.cart-total span:last-child {
+  font-size: 1em;
+  font-weight: 700;
+  border-bottom: 3px solid #4a4af8;
 }
 .cart-notification {
   display: none;
@@ -567,16 +598,16 @@ a {
   justify-content: center;
   align-items: center;
   padding: 1em;
-  background-color: #4a4af8;
+  background-color: whitesmoke;
   border: 2px solid white;
   border-radius: 10px;
   transition: all 0.5s ease;
   max-width: fit-content;
   margin: 0 auto;
-  /* margin-top: 2em; */
+  color: #4a4af8;
 }
 .sub-hero .content .controller .sub-btn:hover {
-  background-color: white;
+  background-color: black;
   color: #4a4af8;
   border-color: #4a4af8;
 }
@@ -1848,22 +1879,52 @@ footer {
     text-align: center;
     padding: 15px;
   }
+  .other-page .navigation li .product-page-nav {
+    color: black;
+  }
   .navigation.active li {
-    /* Adjust transition delay for vertical expansion */
     transition-delay: 0.8s;
   }
-  .navigation li .dropdown-content {
-    max-width: 100%;
-    top: 45px;
-    left: 50%;
-    transform: translateX(-50%);
+  .navigation li.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
   }
-  .navigation li.dropdown:hover .dropdown-content {
+  .navigation li.dropdown .dropdown-title {
+    pointer-events: none;
+    border-bottom: 3px solid #4646fc;
+  }
+  .navigation li .dropdown-content {
+    position: static;
+    display: flex;
+    gap: 1em;
+    background-color: transparent;
+    max-width: max-content;
+    box-shadow: none;
+    margin: 0 auto;
+  }
+  .navigation li.dropdown .dropdown-content {
     flex-direction: row;
     gap: 1em;
   }
+  .navigation li .dropdown-content a.fb-mobile {
+    display: block;
+  }
+  .navigation li .dropdown-content a.fb-desktop {
+    display: none;
+  }
+  .navigation li .dropdown-content a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+  }
   .navigation li .dropdown-content a i {
-    font-size: 20px;
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 900;
   }
   .cart-symbol {
     top: 30px;

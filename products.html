@@ -23,17 +23,28 @@
       <div class="nav-wrapper">
         <nav>
           <ul class="navigation">
-            <span class="toggleMenu"></span>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <span class="toggleMenu" class="product-page-nav"></span>
+            <li><a href="index.html" class="product-page-nav">Home</a></li>
+            <li>
+              <a href="products.html" class="product-page-nav">Products</a>
+            </li>
+            <li><a href="news.html" class="product-page-nav">News</a></li>
+            <li><a href="about.html" class="product-page-nav">About Us</a></li>
+            <li>
+              <a href="contact.html" class="product-page-nav">Contact Us</a>
+            </li>
             <li class="dropdown">
-              <a href="javascript:void(0)">Follow Us</a>
+              <a
+                href="javascript:void(0)"
+                class="product-page-nav dropdown-title"
+                >Follow Us</a
+              >
               <div class="dropdown-content">
-                <a href="https://www.facebook.com"
+                <a class="fb-desktop" href="https://www.facebook.com"
                   ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="fb-mobile" href="https://www.facebook.com"
+                  ><i class="fa-brands fa-facebook-f"></i
                 ></a>
                 <a href="https://www.twitter.com"
                   ><i class="fa-brands fa-x-twitter"></i
@@ -58,14 +69,17 @@
     <div class="cart-overlay" id="cart-overlay">
       <div class="cart-content">
         <h2>Your Cart</h2>
-        <div class="cart-items" id="cart-items"></div>
+        <button class="close-cart-btn" id="close-cart-btn">x</button>
+        <div class="cart-scrollable">
+          <div class="cart-items" id="cart-items"></div>
+        </div>
         <div class="cart-total">
           <span>Total:</span>
           <span id="cart-total">$0.00</span>
         </div>
-        <button class="close-cart-btn" id="close-cart-btn">x</button>
       </div>
     </div>
+
     <div class="cart-notification" id="cart-notification">
       <p>Item added to cart!</p>
     </div>
@@ -74,7 +88,7 @@
     </div>
     <div class="cart-notification" id="cart-notification-empty">
       <p>Your cart is empty!</p>
-    </div>  
+    </div>
     <div class="cart-notification" id="cart-notification-error">
       <p>There was an error!</p>
     </div>
