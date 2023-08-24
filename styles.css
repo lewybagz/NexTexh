@@ -354,7 +354,7 @@ a {
   color: whitesmoke;
 }
 .cart-scrollable {
-  max-height: 70vh; 
+  max-height: 70vh;
   overflow-y: auto;
   scrollbar-width: 3px;
 }
@@ -585,6 +585,7 @@ a {
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 1em;
+  letter-spacing: 0.75px;
 }
 .sub-hero .content p {
   font-size: 1.25em;
@@ -669,6 +670,7 @@ a {
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 1em;
+  letter-spacing: 0.75px;
 }
 .journey .content p {
   font-size: 1.25em;
@@ -1343,7 +1345,6 @@ nav span {
 .right {
   z-index: 2;
   position: relative;
-  color: black;
   max-width: 35vw;
   display: flex;
   flex-direction: column;
@@ -1802,6 +1803,135 @@ footer {
 }
 .mobile {
   display: none;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    width: 40%;
+
+    & h1 {
+      font-size: 2.1em;
+      margin-bottom: 0.5em;
+    }
+    & p {
+      font-size: 1.2em;
+    }
+  }
+  .home-img1 {
+    left: 48%;
+  }
+
+  .sub-hero .content {
+    gap: 2em;
+    left: 275px;
+
+    & h2 {
+      font-size: 2.2em;
+      margin-bottom: 0.5em;
+    }
+    & p {
+      font-weight: 500;
+      font-size: 1.2em;
+    }
+    & .innovations {
+      position: relative;
+      right: 600px;
+      top: -40px;
+      z-index: 4;
+    }
+    & .controller {
+      position: relative;
+      top: -170px;
+    }
+  }
+
+  .journey {
+    & .content {
+      max-width: 60vw;
+      top: -700px;
+      left: -220px;
+    }
+    & .jrny-img img {
+      width: 130%;
+    }
+  }
+
+  .cart-scrollable {
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .news-article {
+    max-width: 25vw;
+    position: relative;
+    z-index: 3;
+
+    & .news-title {
+      font-size: 1.2em;
+      min-height: 100px;
+      max-height: 130px;
+      display: flex;
+      align-items: flex-start;
+      padding-top: 1.5em;
+      padding-bottom: 0.75em;
+      text-align: center;
+    }
+  }
+
+  #company-history h2 {
+    top: -5%;
+  }
+  .left,
+  .right {
+    gap: 1em;
+  }
+  .left {
+    top: -18%;
+  }
+  .right {
+    bottom: 110%;
+
+    & p {
+      font-size: 1.1em;
+    }
+    & .history-circle3 {
+      background-color: black;
+      top: -10%;
+      left: 60%;
+    }
+  }
+  .left p,
+  .right p {
+    font-weight: 600;
+  }
+  .team-wrapper h2 {
+    margin-bottom: 1em;
+  }
+
+  .contact .container .contact-form {
+    width: 25vw;
+  }
+  .contact .content {
+    position: relative;
+    top: 25px;
+
+    & h2 {
+      font-size: 3.5em;
+    }
+  }
+  .contact-circle1 {
+    right: 250px;
+    width: 250px;
+    height: 250px;
+  }
+  .contact-circle2 {
+    left: 350px;
+    top: 0;
+  }
 }
 @media (max-width: 768px) {
   body {
