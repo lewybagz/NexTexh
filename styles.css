@@ -1354,6 +1354,7 @@ nav span {
 }
 .left {
   left: 5%;
+  color: black;
 }
 .right {
   top: -70%;
@@ -1841,14 +1842,14 @@ footer {
     }
     & .controller {
       position: relative;
-      top: -170px;
+      top: -80px;
     }
   }
 
   .journey {
     & .content {
       max-width: 60vw;
-      top: -700px;
+      top: -550px;
       left: -220px;
     }
     & .jrny-img img {
@@ -1893,7 +1894,7 @@ footer {
     top: -18%;
   }
   .right {
-    bottom: 110%;
+    top: -110%;
 
     & p {
       font-size: 1.1em;
