@@ -1806,7 +1806,7 @@ footer {
   display: none;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 1500px) and (max-width: 1902px) {
   .hero {
     width: 40%;
 
